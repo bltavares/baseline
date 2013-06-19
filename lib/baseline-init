@@ -1,0 +1,13 @@
+#!/bin/bash
+
+target_dir=${1:-"."}
+
+[[ -d $target_dir ]] || mkdir -p $target_dir
+(
+ cd $target_dir
+ if [[ -d "./.baseline" ]]; then
+   echo "Baseline project already created."
+ else
+   git clone https://github.com/bltavares/vagrant-baseline.git .baseline
+ fi
+)

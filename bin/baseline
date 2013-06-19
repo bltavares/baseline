@@ -1,0 +1,8 @@
+#!/bin/bash
+
+curr_dir=`dirname $BASH_SOURCE[0]`
+
+command=$1
+shift
+
+exec "$curr_dir"/../lib/baseline-$command $@
