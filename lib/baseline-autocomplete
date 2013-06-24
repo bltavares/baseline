@@ -1,6 +1,4 @@
-_autocomplete() {
-  local curr_dir=$(dirname $(readlink -f `which baseline`))
-  echo "source $curr_dir/../completions/baseline"
-}
+#!/bin/bash
 
-_autocomplete
+root_dir=`baseline root-dir`
+echo "source $root_dir/completions/baseline"
