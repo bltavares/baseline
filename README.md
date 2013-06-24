@@ -37,3 +37,13 @@ baseline ssh
 ```bash
 baseline provision <environments>
 ```
+
+#### down
+```bash
+baseline down
+```
+
+#### destroy
+```bash
+baseline destroy
+```
