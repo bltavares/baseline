@@ -1,8 +1,15 @@
 #!/bin/bash
 
-curr_dir=`dirname $BASH_SOURCE[0]`
+curr_dir=$(dirname $(readlink -f `which baseline`))
 
 command=$1
 shift
 
-exec "$curr_dir"/../lib/baseline-$command $@
+command_file="$curr_dir"/../lib/baseline-$command
+
+if ! [[ -x $command_file ]]; then
+  echo "Command does not exist. Run baseline help"
+  exit 1
+fi
+
+exec $command_file $@

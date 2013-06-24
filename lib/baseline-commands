@@ -1,2 +1,4 @@
-curr_dir=`dirname $BASH_SOURCE[0]`
-echo "`ls $curr_dir | cut -f2 -d'-'`"
+#!/bin/bash
+
+curr_dir=$(dirname $(readlink -f `which baseline`))
+echo "`ls $curr_dir/../lib | cut -f2 -d'-'`"
