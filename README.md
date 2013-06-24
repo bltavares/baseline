@@ -24,3 +24,8 @@ baseline up ruby nodejs
 ```bash
 baseline ssh
 ```
+
+#### provision
+```bash
+baseline provision <environments>
+```
