@@ -1,0 +1,5 @@
+echo "Baseline: Dev box with batteries included"
+echo -e "Commands available:\n"
+baseline commands
+
+echo -e "\n\nHappy hacking (:"
