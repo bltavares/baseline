@@ -1,5 +1,6 @@
 (
  export host_name=`echo "$@" | tr " " "-"`
+ [[ "x$host_name" == "x" ]] && unset host_name
  cd .baseline
  vagrant up
 )
