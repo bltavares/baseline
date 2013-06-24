@@ -1,0 +1,6 @@
+_autocomplete() {
+  local curr_dir=`dirname $BASH_SOURCE[0]`
+  echo "source $curr_dir/../completions/baseline"
+}
+
+_autocomplete

@@ -1,0 +1,12 @@
+_baseline_autocomplete() {
+
+  local cur=${COM_WORDS[COM_CWORD]}
+
+  if [ "$COMP_CWORD" -eq 1 ]; then
+    COMPREPLY=( $(compgen -W "`baseline commands`" -- "$cur") )
+  fi
+
+  return 0;
+}
+
+complete -F _baseline_autocomplete baseline

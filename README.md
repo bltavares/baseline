@@ -1,6 +1,14 @@
 # Baseline
 ## Dev box with batteries
 
+### Instalation
+
+```bash
+git clone https://github.com/bltavares/baseline.git /opt/baseline
+export PATH=$PATH:/opt/baseline/bin
+echo "eval \"$(baseline autocomplete)\"" >> $HOME/.bashrc
+```
+
 ### Commands
 
 #### init

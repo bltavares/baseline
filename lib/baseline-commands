@@ -1,0 +1,2 @@
+curr_dir=`dirname $BASH_SOURCE[0]`
+echo "`ls $curr_dir | cut -f2 -d'-'`"
