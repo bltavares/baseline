@@ -5,19 +5,19 @@
 
 ```bash
 git clone https://github.com/bltavares/baseline.git /opt/baseline
-export PATH=$PATH:/opt/baseline/bin
-echo "eval \"$(baseline autocomplete)\"" >> $HOME/.bashrc
+echo 'export PATH=$PATH:/opt/baseline/bin' >> $HOME/.bashrc
+echo 'eval "$(baseline autocomplete)"' >> $HOME/.bashrc
 ```
 
 ### Commands
 
-#### init
+#### init - Create a new box in the project dir
 
 ```bash
 baseline init <path to init box>
 ```
 
-#### up
+#### up - Bring a box up with some configuration
 
 ```bash
 baseline up <environments>
@@ -28,22 +28,22 @@ e.g.:
 baseline up ruby nodejs
 ```
 
-#### ssh
+#### ssh - Connect to the box
 ```bash
 baseline ssh
 ```
 
-#### provision
+#### provision - Provision a running box with the specified environments
 ```bash
 baseline provision <environments>
 ```
 
-#### down
+#### down - Shutdown the box
 ```bash
 baseline down
 ```
 
-#### destroy
+#### destroy - Destroy the box
 ```bash
 baseline destroy
 ```
