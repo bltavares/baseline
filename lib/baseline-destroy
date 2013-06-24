@@ -1,0 +1,5 @@
+(
+ cd .baseline
+ vagrant destroy $@
+)
+rm -rf .baseline
