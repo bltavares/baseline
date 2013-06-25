@@ -26,6 +26,7 @@ else
   curr_dir=$(dirname `readlink -f "$path_to_baseline"`)
 fi
 
+export baseline_box=true
 command=$1
 shift
 
