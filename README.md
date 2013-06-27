@@ -72,6 +72,11 @@ baseline down
 baseline destroy
 ```
 
+#### update - Update the box recipes
+```bash
+baseline update
+```
+
 ### Using GUI programs
 
 Ssh allows you to forward the X server to your computer. If you want to use a program with a grafical interface or want to code an app that generates graphics, you can ask `vagrant` to forward it for you.
