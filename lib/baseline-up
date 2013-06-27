@@ -1,6 +1,14 @@
+#!/bin/env bash
+
 (
- export host_name=`echo "$@" | tr " " "-"`
- [[ "x$host_name" == "x" ]] && unset host_name
  cd .baseline
+ export host_name=`echo "$@" | tr " " "-"`
+ if [[ "x$host_name" == "x" ]]; then
+    unset host_name
+    [[ -f .hostname ]] && \
+      export host_name=`cat .hostname | tr "\n" "-" | sed -e "s/-$//"`
+ else
+    echo "$@" | tr " " "\n" > .hostname
+ fi
  vagrant up
 )

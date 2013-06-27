@@ -44,8 +44,10 @@ baseline init <path to init box>
 #### up - Bring a box up with some configuration
 
 ```bash
-baseline up <environments>
+baseline up [<environments>]
 ```
+- Arguments:
+  - environments: optional list of enviroments to start the box with. If no argument is passed, it will come up with the last configuration used
 
 e.g.:
 ```bash
