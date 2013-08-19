@@ -13,6 +13,7 @@ Now you can mess up all the files in your dev box, and discard when you think it
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Commands](#commands)
+  - [List of environments](#list-of-environents)
   - [Using GUI programs](#using-gui-programs)
   - [Extending with your own puppet scripts](#extending-with-your-own-puppet-scripts)
   - [Debugging](#debugging)
@@ -90,6 +91,11 @@ baseline destroy
 ```bash
 baseline update
 ```
+
+### List of environments
+
+Currently baseline is only supporting (vagrant-baseline)[https://github.com/bltavares/vagrant-baseline] vagrant setup.
+You can check the list of supported environments (here)[https://github.com/bltavares/vagrant-baseline#current-environments].
 
 ### Using GUI programs
 
