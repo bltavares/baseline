@@ -110,6 +110,12 @@ baseline up dots nodejs
 
 The dofiles project must have some constraints. Check the [instructions](https://github.com/bltavares/vagrant-baseline#using-your-own-dotfiles).
 
+#### upgrade
+```bash
+baseline upgrade
+```
+Upgrade baseline to the latest version
+
 ### List of environments
 
 Currently baseline is only supporting [vagrant-baseline](https://github.com/bltavares/vagrant-baseline) vagrant setup.

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+root_dir=`baseline root-dir`
+
+echo "Upgrading baseline" 1>&2
+(
+cd $root_dir
+git pull --rebase || git checkout master .
+)
