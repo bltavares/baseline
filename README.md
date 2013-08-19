@@ -39,6 +39,14 @@ echo 'eval "$(baseline autocomplete)"' >> $HOME/.bashrc
 
 ```bash
 baseline init <path to init box>
+
+# example
+cd awesome-project
+baseline init .
+
+# another example
+baseline init awesome-project
+cd awesome-project
 ```
 
 #### up - Bring a box up with some configuration
