@@ -4,7 +4,7 @@
 The idea is to provide a simple dev box with tools.
 
 Sometimes you want to play with a project, which leads you to install a lot of stuff on your computer and the filesystem gets messy.
-Your computer turn out to be slow booting up, because it is loading a database that you never use.
+Botting your computer begins to slow, because it is loading a database that you never use.
 Maybe you want to try out a language but it requires you to install all the libraries and compilers.
 
 Now you can mess up all the files in your dev box, and discard when you think it is to messy.
@@ -35,15 +35,14 @@ echo 'eval "$(baseline autocomplete)"' >> $HOME/.bashrc
 This command will clone this repo to /opt/baseline and add it to your PATH, so the command can be found.
 Then it will add some autocomplete for you.
 
-You can clone this to wherever you want, just be sure to include it to your PATH.
-Fore people that use ~/bin schema on the PATH, you can symlink the binary that exist inside <baseline cloned path>/bin
+Don't worry too much about cloning it into /opt/baseline. Clone it wherever you want, but put that onto your path. One idea is to clone it somewhere, then symlink it to a place on your path.
 
 ### Commands
 
 #### init - Create a new box in the project dir
 
 ```bash
-baseline init <path to init box>
+baseline init <path where you want your box to live>
 
 # example
 cd awesome-project
@@ -60,7 +59,7 @@ cd awesome-project
 baseline up [<environments>]
 ```
 - Arguments:
-  - environments: optional list of enviroments to start the box with. If no argument is passed, it will come up with the last configuration used
+  - environments: optional list of enviroments to start the box with. If no argument is passed, it will come up with the last configuration used.
 
 e.g.:
 ```bash
@@ -99,23 +98,22 @@ You can check the list of supported environments [here](https://github.com/bltav
 
 ### Using GUI programs
 
-Ssh allows you to forward the X server to your computer. If you want to use a program with a grafical interface or want to code an app that generates graphics, you can ask `vagrant` to forward it for you.
+Ssh allows you to forward the X server to your computer. If you want to use a program with a graphical interface or want to code an app that generates graphics, you can ask `vagrant` to forward it for you.
 
-Just goes with:
+Just ssh with the following command:
 ```bash
 baseline ssh -- -X
 ```
 
 ### Extending with your own puppet scripts
 
-Sometimes you will want to try out some different modules that are not currently in the project, or will want to set up a webserver for the project you are writing and have it configured and deployed with your project.
-Or maybe you just want to have some packages installed, or removed.
+Sometimes you will want to try out some different modules that are not currently in the project. Perhaps you want to set up a webserver for the project you are writing and have it configured and deployed with your project. Or maybe you just want to have some packages installed, or removed.
 
-You can achieve that extending the project using the _.baseline/puppet/custom_ folder. There is an example file to guide you in the path to extend your vagrant machine.
+You can achieve that by extending the project using the _.baseline/puppet/custom_ folder. There is an example file to guide you in extending your vagrant machine.
 
 ### Debugging
 
-When building puppet scripts, a verbose output can help. In those cases we provide the `DEBUG` variable to increase the output, show debug messages and create dependency graphs
+When building puppet scripts, a verbose output can help. In those cases we provide the `DEBUG` variable to increase the output, show debug messages and create dependency graphs.
 
 ```bash
 DEBUG=1 baseline up redis
