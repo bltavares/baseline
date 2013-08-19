@@ -24,7 +24,6 @@ Now you can mess up all the files in your dev box, and discard when you think it
 * git
 
 ### Installation
-
 Make sure you have vagrant installed and configured on your machine.
 
 ```bash
@@ -32,6 +31,11 @@ git clone https://github.com/bltavares/baseline.git /opt/baseline
 echo 'export PATH=$PATH:/opt/baseline/bin' >> $HOME/.bashrc
 echo 'eval "$(baseline autocomplete)"' >> $HOME/.bashrc
 ```
+This command will clone this repo to /opt/baseline and add it to your PATH, so the command can be found.
+Then it will add some autocomplete for you.
+
+You can clone this to wherever you want, just be sure to include it to your PATH.
+Fore people that use ~/bin schema on the PATH, you can symlink the binary that exist inside <baseline cloned path>/bin
 
 ### Commands
 
