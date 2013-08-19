@@ -1,0 +1,20 @@
+#!/bin/bash
+
+dotfiles_source=$1
+
+usage="Usage: baseline dotfiles <git source>"
+[[ $dotfiles_source"x" == "x" ]] && echo $usage 1>&2 && exit 1
+
+baseline_project_message="You must run the command inside a baseline project"
+[[ ! -d ".baseline" ]] && echo $baseline_project_message 1>&2 && exit 2
+
+if [[ `uname` == "Darwin" ]]; then
+  SED="sed -i '' "
+else
+  SED="sed -i "
+fi
+
+config_file=".baseline/puppet/config.yaml"
+echo "Changing the dotfiles source to $dotfiles_source" 1>&2
+$SED '/baseline_dotfiles/d' $config_file && \
+  echo "baseline_dotfiles: $dotfiles_source" >> $config_file

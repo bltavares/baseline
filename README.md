@@ -91,6 +91,25 @@ baseline destroy
 baseline update
 ```
 
+#### dotfiles
+```bash
+baseline dotfiles <gir url for the dotfiles> 
+```
+- Arguments:
+ - git url for the dotfiles: The url to clone dotfiles from
+
+This command will change the configurations to point to your own dotfiles.
+Then use the environment `dots` to have it installed in your box.
+
+Eg:
+```bash
+baseline init
+baseline dotfiles <github clone url>
+baseline up dots nodejs
+```
+
+The dofiles project must have some constraints. Check the [instructions](https://github.com/bltavares/vagrant-baseline#using-your-own-dotfiles).
+
 ### List of environments
 
 Currently baseline is only supporting [vagrant-baseline](https://github.com/bltavares/vagrant-baseline) vagrant setup.
