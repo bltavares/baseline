@@ -1,11 +1,11 @@
 #!/bin/bash
 
+stop_unless_baseline_project
+
 dotfiles_source=$1
 
 usage="Usage: baseline dotfiles <git source>"
 [[ $dotfiles_source"x" == "x" ]] && echo $usage 1>&2 && exit 1
-
-stop_unless_baseline_project
 
 if [[ `uname` == "Darwin" ]]; then
   SED="sed -i '' "
