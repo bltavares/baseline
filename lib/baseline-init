@@ -11,6 +11,7 @@ source_baseline=${2:-"https://github.com/bltavares/vagrant-baseline.git"}
  else
    git clone $source_baseline .baseline
  fi
+ echo ".baseline" >> .gitignore
  cd .baseline
  git update-index --assume-unchanged puppet/config.yaml
 )
