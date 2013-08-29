@@ -8,7 +8,8 @@ _baseline_autocomplete() {
     COMPREPLY=( $(compgen -W "`baseline commands`" -- "$cur") )
   fi
 
-  if [ "$COMP_CWORD" -gt 1 ] && [[ "${COMP_WORDS[1]}" == "up" ]]; then
+  if [ "$COMP_CWORD" -gt 1 ] && \
+    ( [[ "${COMP_WORDS[1]}" == "up" ]] || [[ "${COMP_WORDS[1]}" == "provision" ]] ); then
     exclude_list=$(IFS=\|; excludeds="${COMP_WORDS[@]:2}"; echo "$excludeds")
     COMPREPLY=( $(compgen -W "`baseline envs 2> /dev/null`" -X "($exclude_list)" -- $cur) )
   fi

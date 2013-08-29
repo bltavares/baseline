@@ -1,3 +1,7 @@
+Version 1.1.1
+
+* List the environments of the baseline project in the provision command
+
 Version 1.1.0
 
 * List the environments of the baseline project with autocomplete
