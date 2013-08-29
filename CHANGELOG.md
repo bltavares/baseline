@@ -1,6 +1,6 @@
 Version 1.1.0
 
-* List the environments of the baseline project
+* List the environments of the baseline project with autocomplete
 
 
 Version 1.0.0

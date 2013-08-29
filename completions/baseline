@@ -1,9 +1,16 @@
+#!/bin/bash
+
 _baseline_autocomplete() {
 
   local cur=${COM_WORDS[COM_CWORD]}
 
   if [ "$COMP_CWORD" -eq 1 ]; then
     COMPREPLY=( $(compgen -W "`baseline commands`" -- "$cur") )
+  fi
+
+  if [ "$COMP_CWORD" -gt 1 ] && [[ "${COMP_WORDS[1]}" == "up" ]]; then
+    exclude_list=$(IFS=\|; excludeds="${COMP_WORDS[@]:2}"; echo "$excludeds")
+    COMPREPLY=( $(compgen -W "`baseline envs 2> /dev/null`" -X "($exclude_list)" -- $cur) )
   fi
 
   return 0;
