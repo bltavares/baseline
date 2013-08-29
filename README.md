@@ -116,6 +116,12 @@ baseline upgrade
 ```
 Upgrade baseline to the latest version
 
+
+#### version
+```bash
+baseline version
+```
+
 ### List of environments
 
 Currently baseline is only supporting [vagrant-baseline](https://github.com/bltavares/vagrant-baseline) vagrant setup.
