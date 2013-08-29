@@ -1,21 +1,21 @@
 #!/bin/bash
 _baseline_readlink() {
   (
-    TARGET_FILE=$1
+  TARGET_FILE=$1
 
+  cd `dirname $TARGET_FILE`
+  TARGET_FILE=`basename $TARGET_FILE`
+
+  while [ -L "$TARGET_FILE" ]
+  do
+    TARGET_FILE=`readlink $TARGET_FILE`
     cd `dirname $TARGET_FILE`
     TARGET_FILE=`basename $TARGET_FILE`
+  done
 
-    while [ -L "$TARGET_FILE" ]
-    do
-        TARGET_FILE=`readlink $TARGET_FILE`
-        cd `dirname $TARGET_FILE`
-        TARGET_FILE=`basename $TARGET_FILE`
-    done
-
-    PHYS_DIR=`pwd -P`
-    RESULT=$PHYS_DIR/$TARGET_FILE
-    echo $RESULT
+  PHYS_DIR=`pwd -P`
+  RESULT=$PHYS_DIR/$TARGET_FILE
+  echo $RESULT
   )
 }
 
@@ -36,5 +36,11 @@ if ! [[ -x $command_file ]]; then
   echo "Command does not exist. Run baseline help"
   exit 1
 fi
+
+stop_unless_baseline_project() {
+  baseline_non_project_message="You must run the command inside a baseline project"
+  [[ ! -d ".baseline" ]] && echo $baseline_non_project_message 1>&2 && exit 2
+}
+export -f stop_unless_baseline_project
 
 exec $command_file $@

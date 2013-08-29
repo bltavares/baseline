@@ -1,0 +1,8 @@
+#!/bin/bash
+
+stop_unless_baseline_project
+
+(
+ cd .baseline
+ sed -n 's/| \([a-z0-9]*\) *|/\1/p' < README.md| cut -d ' ' -f 1
+)

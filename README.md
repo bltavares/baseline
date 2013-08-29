@@ -116,6 +116,12 @@ baseline upgrade
 ```
 Upgrade baseline to the latest version
 
+#### envs
+```bash
+baseline envs
+```
+List the environments supported by the current baseline project
+
 
 #### version
 ```bash
