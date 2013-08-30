@@ -7,7 +7,13 @@ Sometimes you want to play with a project, which leads you to install a lot of s
 Botting your computer begins to slow, because it is loading a database that you never use.
 Maybe you want to try out a language but it requires you to install all the libraries and compilers.
 
-Now you can mess up all the files in your dev box, and discard when you think it is to messy.
+Now you can mess up all the files in your dev box, and discard when you think it is too messy.
+
+
+#### Video cast
+_Click to watch a live example of baseline_
+
+[![Video Cast](http://i.imgur.com/DKy7Huj.png)](http://showterm.io/ff5b0a53bdc8a70d7d5b8)
 
 ### Table of contents
   - [Requirements](#requirements)
