@@ -1,3 +1,7 @@
+Version 1.1.2
+
+* Update the `provision` command to match the latest changes on vagrant
+
 Version 1.1.1
 
 * List the environments of the baseline project in the provision command

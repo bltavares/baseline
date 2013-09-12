@@ -6,5 +6,5 @@ stop_unless_baseline_project
  cd .baseline
  export host_name=`echo "$@" | tr " " "-"`
  [[ "x$host_name" == "x" ]] && unset host_name
- vagrant reload
+ vagrant reload --provision
 )
