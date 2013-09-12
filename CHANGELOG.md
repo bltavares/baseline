@@ -1,6 +1,7 @@
 Version 1.1.2
 
 * Update the `provision` command to match the latest changes on vagrant
+* Add the option to include the branch you want to clone the vagrant-baseline repo
 
 Version 1.1.1
 

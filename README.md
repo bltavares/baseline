@@ -48,14 +48,14 @@ Don't worry too much about cloning it into /opt/baseline. Clone it wherever you 
 #### init - Create a new box in the project dir
 
 ```bash
-baseline init [<path where you want your box to live. default to '.'> [<git url for the vagrant files. default to https://github.com/bltavares/vagrant-baseline.git>]]
+baseline init [<path where you want your box to live. default to '.'> [<git url for the vagrant files. default to https://github.com/bltavares/vagrant-baseline.git> [branch name. default to "master"]]] 
 
 # example
 cd awesome-project
 baseline init .
 
 # another example
-baseline init awesome-project https://github.com/<your-username>/vagrant-baseline.git
+baseline init awesome-project https://github.com/<your-username>/vagrant-baseline.git awesome-code
 cd awesome-project
 ```
 

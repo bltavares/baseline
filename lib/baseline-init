@@ -2,6 +2,7 @@
 
 target_dir=${1:-"."}
 source_baseline=${2:-"https://github.com/bltavares/vagrant-baseline.git"}
+branch=${3:-"master"}
 
 [[ -d $target_dir ]] || mkdir -p $target_dir
 (
@@ -9,7 +10,7 @@ source_baseline=${2:-"https://github.com/bltavares/vagrant-baseline.git"}
  if [[ -d "./.baseline" ]]; then
    echo "Baseline project already created."
  else
-   git clone $source_baseline .baseline
+   git clone $source_baseline .baseline -b $branch
  fi
  echo ".baseline" >> .gitignore
  cd .baseline
