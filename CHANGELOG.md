@@ -1,3 +1,7 @@
+Version 1.1.3
+
+* Fix the warning `[[: not found` for `baseline root-dir`
+
 Version 1.1.2
 
 * Update the `provision` command to match the latest changes on vagrant
