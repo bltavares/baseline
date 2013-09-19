@@ -4,7 +4,7 @@
 The idea is to provide a simple dev box with tools.
 
 Sometimes you want to play with a project, which leads you to install a lot of stuff on your computer and the filesystem gets messy.
-Botting your computer begins to slow, because it is loading a database that you never use.
+Booting your computer begins to slow, because it is loading a database that you never use.
 Maybe you want to try out a language but it requires you to install all the libraries and compilers.
 
 Now you can mess up all the files in your dev box, and discard when you think it is too messy.
