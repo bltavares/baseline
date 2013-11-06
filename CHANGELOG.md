@@ -1,3 +1,7 @@
+Version 1.1.4
+
+* Fix the `baseline up` command. Vagrant changed the default behaviour, now machines don't reprovision again on every up, but this is a behaviour that I would like to keep, specially because you can reprovision machines with different environments
+
 Version 1.1.3
 
 * Fix the warning `[[: not found` for `baseline root-dir`

@@ -12,5 +12,5 @@ stop_unless_baseline_project
  else
     echo "$@" | tr " " "\n" > .hostname
  fi
- vagrant up
+ vagrant up --provision
 )
