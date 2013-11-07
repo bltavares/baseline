@@ -1,6 +1,7 @@
 Version 1.2.0
 
 * Add `baseline status`
+* Add `baseline --help`
 
 Version 1.1.4
 
