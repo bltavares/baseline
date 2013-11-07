@@ -4,5 +4,10 @@ stop_unless_baseline_project
 
 (
  cd .baseline
+ if [[ -f .hostname ]]; then
+   echo "Current baseline environment:"
+   cat .hostname
+   echo ""
+ fi
  vagrant status
 )
