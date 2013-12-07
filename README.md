@@ -34,11 +34,15 @@ _Click to watch a live example of baseline_
 Make sure you have vagrant installed and configured on your machine.
 
 ```bash
-git clone https://github.com/bltavares/baseline.git /opt/baseline
-echo 'export PATH=$PATH:/opt/baseline/bin' >> $HOME/.bashrc
-echo 'eval "$(baseline autocomplete)"' >> $HOME/.bashrc
+# Adjust the paths to your preferred location
+installation_path=/opt/baseline
+shell_configuration=$HOME/.bashrc
+
+git clone https://github.com/bltavares/baseline.git $installation_path
+echo 'export PATH=$PATH:'$installation_path'/bin' >> $shell_configuration
+echo 'eval "$(baseline autocomplete)"' >> $shell_configuration
 ```
-This command will clone this repo to /opt/baseline and add it to your PATH, so the command can be found.
+This command will clone this repo to /opt/baseline by default and add it to your PATH, so the command can be found.
 Then it will add some autocomplete for you.
 
 Don't worry too much about cloning it into /opt/baseline. Clone it wherever you want, but put that onto your path. One idea is to clone it somewhere, then symlink it to a place on your path.
