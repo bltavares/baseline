@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "Baseline 1.2.0"
+echo "Baseline 1.2.1"
+[ -f .baseline/VERSION.md ] && cat .baseline/VERSION.md

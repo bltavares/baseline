@@ -1,3 +1,8 @@
+Version 1.2.1
+
+* Add `baseline --version`
+* Report the underlying vagrant-baseline version when asked inside a baseline project
+
 Version 1.2.0
 
 * Add `baseline status`
