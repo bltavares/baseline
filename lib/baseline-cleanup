@@ -1,0 +1,5 @@
+#!/bin/bash
+
+stop_unless_baseline_project
+
+rm -rf .baseline
