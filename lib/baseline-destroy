@@ -5,4 +5,4 @@ stop_unless_baseline_project
 (
  cd .baseline
  vagrant destroy $@
-) && rm -rf .baseline
+)
