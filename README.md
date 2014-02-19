@@ -86,9 +86,9 @@ baseline ssh
 baseline provision <environments>
 ```
 
-#### down - Shutdown the box
+#### halt - Shuthalt the box
 ```bash
-baseline down
+baseline halt
 ```
 
 #### destroy - Destroy the box
