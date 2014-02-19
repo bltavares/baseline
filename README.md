@@ -96,6 +96,11 @@ baseline down
 baseline destroy
 ```
 
+#### remove - Destroy the box AND removes .baseline
+```bash
+baseline remove
+```
+
 #### update - Update the box recipes
 ```bash
 baseline update
