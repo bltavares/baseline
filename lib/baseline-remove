@@ -1,8 +1,5 @@
 #!/bin/bash
 
-stop_unless_baseline_project
-
 (
- cd .baseline
- vagrant destroy $@
+ baseline destroy
 ) && rm -rf .baseline
