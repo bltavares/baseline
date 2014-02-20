@@ -1,3 +1,9 @@
+Version 1.3.0
+
+* Deprecated `baseline down` in favour of `baseline halt`
+* `baseline destroy` will only destroy the VM.
+* `baseline remove` will destroy the VM and remove the .baseline folder
+
 Version 1.2.1
 
 * Add `baseline --version`
