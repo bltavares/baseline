@@ -86,7 +86,7 @@ baseline ssh
 baseline provision <environments>
 ```
 
-#### halt - Shuthalt the box
+#### halt - Halt the box
 ```bash
 baseline halt
 ```
