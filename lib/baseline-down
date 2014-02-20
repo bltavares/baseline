@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Wargning: \"baseline down\" is deprecated. Use \"baseline halt\" instead." >&2
+exec baseline halt
