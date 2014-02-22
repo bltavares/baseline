@@ -12,5 +12,6 @@ stop_unless_baseline_project
  else
     echo "$@" | tr " " "\n" > .hostname
  fi
+ export baseline_kickstart=`echo $host_name | tr "-" " "`
  vagrant up --provision
 )
