@@ -2,7 +2,7 @@
 
 target_dir=${1:-"."}
 source_baseline=${2:-"https://github.com/bltavares/vagrant-baseline.git"}
-branch=${3:-"master"}
+branch=${3:-"kickstart"}
 
 [[ -d $target_dir ]] || mkdir -p $target_dir
 (
