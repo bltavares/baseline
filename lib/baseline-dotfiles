@@ -1,0 +1,12 @@
+#!/bin/bash
+
+stop_unless_baseline_project
+
+dotfiles_source=$1
+
+usage="Usage: baseline dotfiles <git source>"
+[[ $dotfiles_source"x" == "x" ]] && echo $usage 1>&2 && exit 1
+
+config_file=".baseline/files/dotfiles.sh"
+echo "Changing the dotfiles source to $dotfiles_source" 1>&2
+echo "baseline_dotfiles_url=$dotfiles_source" > $config_file
