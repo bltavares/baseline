@@ -52,14 +52,14 @@ Don't worry too much about cloning it into /opt/baseline. Clone it wherever you 
 #### init - Create a new box in the project dir
 
 ```bash
-baseline init [<path where you want your box to live. default to '.'> [<git url for the vagrant files. default to https://github.com/bltavares/vagrant-baseline.git> [branch name. default to "master"]]] 
+baseline init [<path where you want your box to live. default to '.'> [<git url for the vagrant files. default to https://github.com/bltavares/kickstart-baseline.git> [branch name. default to "master"]]] 
 
 # example
 cd awesome-project
 baseline init .
 
 # another example
-baseline init awesome-project https://github.com/<your-username>/vagrant-baseline.git awesome-code
+baseline init awesome-project https://github.com/<your-username>/kickstart-baseline.git awesome-code
 cd awesome-project
 ```
 
@@ -141,12 +141,12 @@ baseline dotfiles <gir url for the dotfiles>
  baseline up dots nodejs
  ```
 
- The dofiles project must have some constraints. Check the [instructions](https://github.com/bltavares/vagrant-baseline#using-your-own-dotfiles).
+ The dofiles project must have some constraints. Check the [instructions](https://github.com/bltavares/kickstart-baseline#using-your-own-dotfiles).
 
 ### List of environments
 
-Currently baseline is only supporting [vagrant-baseline](https://github.com/bltavares/vagrant-baseline) vagrant setup.
-You can check the list of supported environments [here](https://github.com/bltavares/vagrant-baseline#current-environments).
+Currently baseline is only supporting [kickstart-baseline](https://github.com/bltavares/kickstart-baseline) vagrant setup.
+You can check the list of supported environments [here](https://github.com/bltavares/kickstart-baseline#current-environments).
 
 ### Using GUI programs
 
