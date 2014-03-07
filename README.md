@@ -31,6 +31,9 @@ _Click to watch a live example of baseline_
 * git
 
 ### Installation
+
+#### Manual installation
+
 Make sure you have vagrant installed and configured on your machine.
 
 ```bash
@@ -46,6 +49,13 @@ This command will clone this repo to /opt/baseline by default and add it to your
 Then it will add some autocomplete for you.
 
 Don't worry too much about cloning it into /opt/baseline. Clone it wherever you want, but put that onto your path. One idea is to clone it somewhere, then symlink it to a place on your path.
+
+#### Homebrew
+
+```bash
+brew tap bltavares/tap
+brew install baseline
+```
 
 ### Commands
 
