@@ -173,6 +173,15 @@ Sometimes you will want to try out some different modules that are not currently
 
 You can achieve that by extending the project using the _.baseline/puppet/custom_ folder. There is an example file to guide you in extending your vagrant machine.
 
+### Packaging
+
+#### .deb
+You need to have make and fpm installed.
+
+```bash
+make deb
+```
+
 ### Debugging
 
 When building puppet scripts, a verbose output can help. In those cases we provide the `DEBUG` variable to increase the output, show debug messages and create dependency graphs.
