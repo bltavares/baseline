@@ -32,6 +32,20 @@ _Click to watch a live example of baseline_
 
 ### Installation
 
+#### Debian/Ubuntu
+
+```bash
+wget https://github.com/bltavares/baseline/releases/download/1.3.0/baseline_1.3.0_all.deb
+sudo dpkg -i baseline_1.3.0_all.deb
+```
+
+#### Mac (Homebrew)
+
+```bash
+brew tap bltavares/tap
+brew install baseline
+```
+
 #### Manual installation
 
 Make sure you have vagrant installed and configured on your machine.
@@ -43,19 +57,22 @@ shell_configuration=$HOME/.bashrc
 
 git clone https://github.com/bltavares/baseline.git $installation_path
 echo 'export PATH=$PATH:'$installation_path'/bin' >> $shell_configuration
-echo 'eval "$(baseline autocomplete)"' >> $shell_configuration
 ```
 This command will clone this repo to /opt/baseline by default and add it to your PATH, so the command can be found.
 Then it will add some autocomplete for you.
 
 Don't worry too much about cloning it into /opt/baseline. Clone it wherever you want, but put that onto your path. One idea is to clone it somewhere, then symlink it to a place on your path.
 
-#### Homebrew
+### Autocomplete
+
+To enable autocompletion run the following command:
 
 ```bash
-brew tap bltavares/tap
-brew install baseline
+shell_configuration=$HOME/.bashrc
+echo 'eval "$(baseline autocomplete)"' >> $shell_configuration
 ```
+
+Adjust the shell configuration variable if you use a different shell.
 
 ### Commands
 
