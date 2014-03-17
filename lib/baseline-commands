@@ -1,4 +1,4 @@
 #!/bin/bash
 
 root_dir=`baseline root-dir`
-echo "`ls $root_dir/lib | cut -f2 -d'-'`"
+echo "`ls $root_dir/lib | cut -f2- -d'-'`"
