@@ -33,7 +33,7 @@ shift
 command_file="$curr_dir"/../lib/baseline-$command
 
 if ! [[ -x $command_file ]]; then
-  echo "Command does not exist. Run baseline help"
+  echo "\"baseline $command\" is not a subcommand. Run \"baseline help\" for more information."
   exit 1
 fi
 
