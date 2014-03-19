@@ -27,7 +27,7 @@ else
 fi
 
 export baseline_box=true
-command=$1
+command=${1:-help}
 shift
 
 command_file="$curr_dir"/../lib/baseline-$command
