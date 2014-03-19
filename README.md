@@ -113,6 +113,11 @@ baseline ssh
 baseline provision <environments>
 ```
 
+#### reload - Reload the box configurations
+```bash
+baseline reload
+```
+
 #### halt - Halt the box
 ```bash
 baseline halt
