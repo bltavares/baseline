@@ -175,6 +175,11 @@ List the environments supported by the current baseline project
 baseline version
 ```
 
+#### exec - Executes the command on vagrant on the .baseline folder
+```bash
+baseline exec rsync
+```
+
 ### List of environments
 
 Currently baseline is only supporting [vagrant-baseline](https://github.com/bltavares/vagrant-baseline) vagrant setup.
